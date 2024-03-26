@@ -2,20 +2,20 @@
 GET http://localhost:5175/games
 
 ###
-GET http://localhost:5175/games/5
+GET http://localhost:5175/games/2
 ###
 POST http://localhost:5175/games
 Content-Type: application/json
 
 {
-    "name": "Tsts",
-    "genreId": 2,
-    "price": 60.99,
-    "releaseDate": "2021-05-11"
+    "name": "Need For Speed Carbon",
+    "genreId": 4,
+    "price": 19.99,
+    "releaseDate": "2003-11-20"
 }
 
 ###
-PUT http://localhost:5175/games/5
+PUT http://localhost:5175/games/7
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:5175/games/1
+DELETE http://localhost:5175/games/7
