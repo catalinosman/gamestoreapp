@@ -1,0 +1,30 @@
+// interacting with the API
+GET http://localhost:5175/games
+
+###
+GET http://localhost:5175/games/5
+###
+POST http://localhost:5175/games
+Content-Type: application/json
+
+{
+    "name": "Tsts",
+    "genreId": 2,
+    "price": 60.99,
+    "releaseDate": "2021-05-11"
+}
+
+###
+PUT http://localhost:5175/games/5
+Content-Type: application/json
+
+{
+    "name": "Test",
+    "genreId": 1,
+    "price": 9.99,
+    "releaseDate": "1991-02-01"
+}
+
+
+###
+DELETE http://localhost:5175/games/1
